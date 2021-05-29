@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/09c4097ac1.js" crossorigin="anonymous"></script>
+  <title>Weather widget</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+    
+</head>
+<body>
+  <div id="input" class="input">
+    <div class="input-size">Show me weather for:</div>
+    <input id="input-field" class="input-field input-size" type="text" placeholder="Enter name city">
+    <button id="submit-btn" class="update input-size">OK</button>
+</div>
+ <div class="wrapper">
+  
+    
+   <div class="container cont-size1">
+     <div class="town"></div>
+     <div class="date">
+       <span id="day"></span>
+       <span id="month"></span>
+       <span id="year"></span>
+       <span id="weekDay"></span>
+     </div>
+     <div class="time">
+       <span id="hour"></span>
+       <span id="minutes"></span>
+       <span id="second"></span>
+     </div>
+     <div class="humidity">Humidity: <span id="humidity"></span> %</div>
+     <div class="pressure">Pressure: <span id="pressure"></span> hPa</div>
+     <div class="wind">Wind: <span id="speed"></span> km/h</div>
+     <div class="deg">Wind deg: <span id="deg"></span>&deg;</div>
+   </div>
+   <div class="container cont-size2">
+    <img src="#" id="icon" class="weather-img"/>
+     <div class="degrees">Temperature: <span id="temp"></span>C&deg;</div>
+     <div class="feels">Feels like: <span id="feel"></span>C&deg;</div>
+     <div class="description">Description: <span id="description"></span></div>
+     <div  id="update" class="update"><i class="fas fa-sync-alt"></i></div>
+   
+ </div>
+</div>
+ <script src="app.js"></script>
+</body>
+</html>
