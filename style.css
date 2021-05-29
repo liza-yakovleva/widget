@@ -11,13 +11,17 @@ background: linear-gradient(to top, #ffff4a, #ffd700);
   min-height: 300px;
   display: flex;
   background: linear-gradient(to right, #6ecbf0, #1198f1);
-  flex-direction: row;
+  flex-direction: column;
   color: white;
   padding: 25px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.wrap-row {
+  display: flex;
+  flex-direction: row;
 }
 
 .container {
@@ -36,10 +40,7 @@ img {
   height: 100px;
   margin: 0px 20px;
 }
-/* #update {
-  width: 250px;
 
-} */
 .fa-sync-alt {
  
   font-size: 25px;
@@ -73,12 +74,18 @@ img {
     justify-content: center;
     align-items: center;
   }
+  .wrap-row {
+    flex-direction: column;
+  }
   .container {
 width: 100%;
 align-items: center;
 min-height: 250px;
   }
- 
+  .input-size{
+    
+    width: 100%;
+  }
  
 }
 .town {
@@ -108,12 +115,23 @@ min-height: 250px;
   outline: none;
 }
 .input{
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-bottom: 15px;
  
 }
 .input-size{
   font-size: 25px;
+  margin-bottom: 10px;
+ 
+}
+.input-field
+  {
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  padding: 10px;
+}
+.update {
+  border: none;
+  border-radius: 10px;
+  height: 40px;
 }
